@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kress Robotic Mowers | Down to Earth Lawn Care</title>
+<meta name="description" content="Every Kress robotic mower with current prices, from your authorized Kress dealer in Sioux Center, Iowa.">
+<style>
+  /* Brand colors: change these to match the main website. */
+  :root {
+    --brand: #2f6b2f;
+    --brand-dark: #234f23;
+    --accent: #d9481c;
+    --bg: #ffffff;
+    --card: #ffffff;
+    --soft: #f3f6f1;
+    --line: #dfe5dc;
+    --text: #1d241c;
+    --muted: #5d6a5a;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 24px 16px 40px; }
+  header h1 { margin: 0 0 6px; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.2; }
+  header p { margin: 0; color: var(--muted); max-width: 760px; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: end;
+    margin: 22px 0 10px; padding: 14px 16px; background: var(--soft); border-radius: var(--radius); }
+  .control label { display: block; font-size: .8rem; font-weight: 600; color: var(--muted);
+    text-transform: uppercase; letter-spacing: .04em; margin-bottom: 6px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { border: 1px solid var(--line); background: #fff; color: var(--text); border-radius: 999px;
+    padding: 6px 12px; font: inherit; font-size: .9rem; cursor: pointer; }
+  .chip[aria-pressed="true"] { background: var(--brand); border-color: var(--brand); color: #fff; }
+  select { font: inherit; font-size: .95rem; padding: 7px 10px; border: 1px solid var(--line);
+    border-radius: 8px; background: #fff; color: var(--text); }
+  .count { color: var(--muted); font-size: .9rem; margin: 6px 2px 14px; }
+
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  .card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); overflow: hidden; }
+  .card .img { position: relative; aspect-ratio: 4 / 3; background: var(--soft);
+    display: flex; align-items: center; justify-content: center; }
+  .card img { width: 100%; height: 100%; object-fit: contain; padding: 10px; }
+  .badge { position: absolute; top: 10px; left: 10px; background: var(--accent); color: #fff;
+    font-size: .78rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; }
+  .body { display: flex; flex-direction: column; gap: 8px; padding: 14px 16px 16px; flex: 1; }
+  .line { font-size: .78rem; font-weight: 700; color: var(--brand); text-transform: uppercase; letter-spacing: .05em; }
+  .card h2 { margin: 0; font-size: 1.05rem; line-height: 1.3; }
+  .sku { color: var(--muted); font-weight: 400; font-size: .9rem; }
+  .size { font-weight: 600; }
+  .feats { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
+  .feats li { font-size: .78rem; background: var(--soft); border-radius: 6px; padding: 2px 7px; color: var(--text); }
+  .price { margin-top: auto; padding-top: 6px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+  .now { font-size: 1.35rem; font-weight: 700; }
+  .was { color: var(--muted); text-decoration: line-through; }
+  .save { color: var(--accent); font-weight: 600; font-size: .9rem; }
+  .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+  .btn { flex: 1 1 auto; text-align: center; text-decoration: none; font-weight: 600; font-size: .9rem;
+    padding: 9px 12px; border-radius: 8px; border: 1px solid var(--brand); }
+  .btn.primary { background: var(--brand); color: #fff; }
+  .btn.primary:hover { background: var(--brand-dark); }
+  .btn.secondary { color: var(--brand); background: #fff; }
+  .empty { padding: 30px; text-align: center; color: var(--muted); background: var(--soft); border-radius: var(--radius); }
+
+  footer { margin-top: 26px; font-size: .85rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; }
+  footer a { color: var(--brand); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Kress Robotic Mowers</h1>
+    <p>Down to Earth Lawn Care is an authorized Kress dealer serving Sioux Center, Orange City, Le Mars, Rock Valley and Northwest Iowa. Compare every Kress robot below, then contact us for installation and setup.</p>
+  </header>
+
+  <div class="controls">
+    <div class="control">
+      <label>Product line</label>
+      <div class="chips" id="lines"></div>
+    </div>
+    <div class="control">
+      <label for="size">My lawn is about</label>
+      <select id="size">
+        <option value="0">Any size</option>
+        <option value="0.25">¼ acre</option>
+        <option value="0.5">½ acre</option>
+        <option value="0.75">¾ acre</option>
+        <option value="1">1 acre</option>
+        <option value="1.25">1¼ acres</option>
+        <option value="2.5">2½ acres</option>
+        <option value="3">3 acres</option>
+        <option value="6">6 acres</option>
+        <option value="7">7+ acres</option>
+      </select>
+    </div>
+    <div class="control">
+      <label for="sort">Sort by</label>
+      <select id="sort">
+        <option value="price">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="acres">Lawn size</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="count" id="count" aria-live="polite"></div>
+  <div class="grid" id="grid"></div>
+
+  <footer id="footer"></footer>
+</div>
+
+<script>
+  // Where "Ask us about this model" sends people. Opens on the main site, not inside the embed.
+  var CONTACT_URL = 'https://downtoearthlawncareia.com/contact-us';
+  var LINES = ['All', 'RTKⁿ', 'EyePilot', 'EyePilot 4×4', 'Commercial & Golf'];
+
+  var state = { line: 'All', size: 0, sort: 'price' };
+  var robots = [];
+
+  function money(n) {
+    return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+  function acres(a) {
+    if (a == null) return 'Commercial properties';
+    var whole = Math.floor(a), frac = Math.round((a - whole) * 100);
+    var f = { 25: '¼', 50: '½', 75: '¾' }[frac];
+    var text = f ? (whole ? whole + f : f) : String(a);
+    return 'Up to ' + text + (a > 1 ? ' acres' : ' acre');
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function render() {
+    var list = robots.filter(function (r) {
+      if (state.line !== 'All' && r.line !== state.line) return false;
+      if (state.size > 0 && r.acres != null && r.acres < state.size) return false;
+      return true;
+    });
+    list.sort(function (a, b) {
+      if (state.sort === 'acres') return (a.acres == null ? 999 : a.acres) - (b.acres == null ? 999 : b.acres) || a.price - b.price;
+      return state.sort === 'price-desc' ? b.price - a.price : a.price - b.price;
+    });
+
+    document.getElementById('count').textContent =
+      list.length + (list.length === 1 ? ' model' : ' models') + (state.size ? ' rated for your lawn size' : '');
+
+    var grid = document.getElementById('grid');
+    if (!list.length) {
+      grid.innerHTML = '<div class="empty">No models match. Try a different product line or lawn size.</div>';
+      return;
+    }
+    grid.innerHTML = list.map(function (r) {
+      var sale = r.wasPrice && r.wasPrice > r.price;
+      var subject = encodeURIComponent('Kress ' + r.sku);
+      return '<article class="card">' +
+        '<div class="img">' + (sale ? '<span class="badge">On sale</span>' : '') +
+          (r.image ? '<img loading="lazy" src="' + esc(r.image) + '" alt="Kress ' + esc(r.sku) + ' robotic mower">' : '') +
+        '</div>' +
+        '<div class="body">' +
+          '<div class="line">' + esc(r.line) + '</div>' +
+          '<h2>' + esc(r.name) + ' <span class="sku">' + esc(r.sku) + '</span></h2>' +
+          '<div class="size">' + acres(r.acres) + '</div>' +
+          (r.features.length ? '<ul class="feats">' + r.features.map(function (f) { return '<li>' + esc(f) + '</li>'; }).join('') + '</ul>' : '') +
+          '<div class="price">' +
+            '<span class="now">' + money(r.price) + '</span>' +
+            (sale ? '<span class="was">' + money(r.wasPrice) + '</span><span class="save">Save ' + money(r.wasPrice - r.price) + '</span>' : '') +
+          '</div>' +
+          '<div class="actions">' +
+            '<a class="btn primary" target="_top" href="' + CONTACT_URL + '?model=' + subject + '">Ask us about this model</a>' +
+            '<a class="btn secondary" target="_blank" rel="noopener" href="' + esc(r.url) + '">Details on kress.com</a>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+    }).join('');
+  }
+
+  function setup(data) {
+    robots = data.robots.filter(function (r) { return r.price; });
+
+    var chips = document.getElementById('lines');
+    chips.innerHTML = LINES.filter(function (l) {
+      return l === 'All' || robots.some(function (r) { return r.line === l; });
+    }).map(function (l) {
+      return '<button type="button" class="chip" aria-pressed="' + (l === state.line) + '" data-line="' + esc(l) + '">' + esc(l) + '</button>';
+    }).join('');
+    chips.addEventListener('click', function (e) {
+      var b = e.target.closest('.chip');
+      if (!b) return;
+      state.line = b.getAttribute('data-line');
+      chips.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', c === b); });
+      render();
+    });
+    document.getElementById('size').addEventListener('change', function (e) { state.size = Number(e.target.value); render(); });
+    document.getElementById('sort').addEventListener('change', function (e) { state.sort = e.target.value; render(); });
+
+    var checked = new Date(data.checkedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    document.getElementById('footer').innerHTML =
+      'Prices are Kress\'s listed U.S. prices from <a href="' + esc(data.source) + '" target="_blank" rel="noopener">kress.com</a>, ' +
+      'checked automatically every day (last checked ' + checked + '). Sale prices can end at any time. ' +
+      'Installation, setup and local pricing may vary, so <a href="' + CONTACT_URL + '" target="_top">contact us</a> for a quote. ' +
+      'Kress® is a registered trademark of the Positec Group.';
+
+    render();
+  }
+
+  if (window.__KRESS_DATA__) {
+    setup(window.__KRESS_DATA__);
+  } else {
+    fetch('data/robots.json', { cache: 'no-cache' })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(setup)
+      .catch(function () {
+        document.getElementById('grid').innerHTML =
+          '<div class="empty">Our Kress lineup is temporarily unavailable. Please <a href="' + CONTACT_URL + '" target="_top">contact us</a> for current models and prices.</div>';
+      });
+  }
+</script>
+</body>
+</html>
