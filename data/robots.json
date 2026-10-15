@@ -1,0 +1,275 @@
+{
+  "source": "https://www.kress.com/en-us/robotic-lawn-mowers/",
+  "checkedAt": "2026-10-15T16:14:59.287Z",
+  "count": 16,
+  "robots": [
+    {
+      "sku": "KR800",
+      "name": "Voyager robotic lawn mower",
+      "line": "Commercial & Golf",
+      "acres": null,
+      "features": [],
+      "price": 59999.99,
+      "wasPrice": null,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-voyager-robotic-lawn-mower-kr800/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/f956ba66733a365dcf810784331353e08bc6314b.png/KR800%20List.png",
+      "description": ""
+    },
+    {
+      "sku": "KR804",
+      "name": "Voyager 60'' robotic lawn mower",
+      "line": "Commercial & Golf",
+      "acres": null,
+      "features": [
+        "60\" cutting width"
+      ],
+      "price": 99999.99,
+      "wasPrice": null,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-voyager-60-robotic-lawn-mower-kr804/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/6a44b2627c491c14bcd913ef45b60e9e1e9eeb6a.png/KR804%20KR804E%20List.png",
+      "description": ""
+    },
+    {
+      "sku": "KR238G",
+      "name": "MasterSeries RTKⁿ 20 acre robotic mower for golf courses",
+      "line": "Commercial & Golf",
+      "acres": 20,
+      "features": [
+        "RTKⁿ satellite navigation",
+        "Golf-course grade"
+      ],
+      "price": 43999.99,
+      "wasPrice": null,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-masterseries-rtk%e2%81%bf-88000-m%c2%b2-robotic-mower-kr238g/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/1b2a72bd1a1ef2d3823bccba9c6a65b41a9951ee.png/KR238%20KR238E%20List.png",
+      "description": "The Kress MasterSeries KR238 redefines unmanned turf management for golf courses. Engineered to maintain championship-quality surfaces at scale, it mows up to 20 acres in 48 hours, delivering the consistency, precision and reliability demanded by professional turf managers. Auto-levelling cutting decks continuously adapt to ground contours, maintaining a precise cut while eliminating scalping across undulating terrain. Combined with Kress razor-sharp blades, the system produces clean, reel-like cuts with ±1 mm accuracy, ensuring exceptional visual consistency, playability and turf health—even at cutting heights as low as 10 mm. At the heart of the KR238 is Kress RTKⁿ technology, delivering centimeter-level positioning accuracy. When GNSS signals become unreliable, the system seamlessly switches to sensor fusion, combining V-SLAM, inertial data and odometry to maintain stable, uninterrupted navigation until satellite reception recovers. A range of dedicated accessories further expands the system’s capabilities, transforming the KR238 into a complete solution for modern professional turf management."
+    },
+    {
+      "sku": "KR272",
+      "name": "EyePilot RTKⁿ 1/2 acre robotic lawn mower with ZeroTrim and integrated 4G",
+      "line": "EyePilot",
+      "acres": 0.5,
+      "features": [
+        "Camera vision",
+        "RTKⁿ satellite navigation",
+        "ZeroTrim edging",
+        "Built-in 4G"
+      ],
+      "price": 2499.99,
+      "wasPrice": null,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-eyepilot-rtk%e2%81%bf-1-2-acre-robotic-lawn-mower-with-zerotrim-and-integrated-4g-kr272/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/b1d00b443abc8eff759db985f1ecd98ca856889b.png/KR271E%20KR273E%20KR274E%20%281%29.png",
+      "description": "Delivering course-grade lawn care, the Kress EyePilot RTKⁿ KR272 1/2 acre robotic mower uses RTKⁿ satellite positioning combined with vision-based awareness to deliver, accurate navigation across different lawns — without added hardware. RTKⁿ correction is delivered over the air and reinforced by a redundant positioning architecture, allowing the mower to maintain accuracy even when satellite signals are compromised. The ZeroTrim cutting system delivers clean, precise edge cutting, reducing the need for manual trimming. Mowing patterns can be set for defined stripes or a more natural finish. EyePilot remains reliably connected via Wi-Fi or integrated 4G. With no ongoing costs, the system stays connected, updated, and trackable."
+    },
+    {
+      "sku": "KR276",
+      "name": "EyePilot RTKⁿ 2.5 acre robotic lawn mower with ZeroTrim with integrated 4G",
+      "line": "EyePilot",
+      "acres": 2.5,
+      "features": [
+        "Camera vision",
+        "RTKⁿ satellite navigation",
+        "ZeroTrim edging",
+        "Built-in 4G"
+      ],
+      "price": 3599.99,
+      "wasPrice": null,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-eyepilot-rtk%e2%81%bf-2-5-acre-robotic-lawn-mower-with-zerotrim-with-integrated-4g-kr276/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/b1d00b443abc8eff759db985f1ecd98ca856889b.png/KR271E%20KR273E%20KR274E%20%282%29.png",
+      "description": "Delivering course-grade lawn care, the Kress EyePilot RTKⁿ KR276 1.5 acre robotic mower uses RTKⁿ satellite positioning combined with vision-based awareness to deliver, accurate navigation across differnt lawns — without added hardware. RTKⁿ correction is delivered over the air and reinforced by a redundant positioning architecture, allowing the mower to maintain accuracy even when satellite signals are compromised. The ZeroTrim cutting system delivers clean, precise edge cutting, reducing the need for manual trimming. Mowing patterns can be set for defined stripes or a more natural finish. EyePilot remains reliably connected via Wi-Fi or integrated 4G. With no ongoing costs, the system stays connected, updated, and trackable."
+    },
+    {
+      "sku": "KR286",
+      "name": "EyePilot 4×4 RTKⁿ 2.5 acre robotic lawn mower with Zero Trim and integrated 4G and Premium Security",
+      "line": "EyePilot 4×4",
+      "acres": 2.5,
+      "features": [
+        "Camera vision",
+        "RTKⁿ satellite navigation",
+        "4×4 drive",
+        "ZeroTrim edging",
+        "Built-in 4G",
+        "Premium security"
+      ],
+      "price": 4299.99,
+      "wasPrice": null,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-eyepilot-4x4-rtk%e2%81%bf-2-5-acre-robotic-lawn-mower-with-zero-trim-and-integrated-4g-and-premium-security-kr286/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/e6c50f2a08669d82f3e151ea7f67f27f761efdce.png/KR281E%20KR283E%20KR285E.png",
+      "description": "Designed for demanding landscapes, the Kress EyePilot 4×4 RTKⁿ KR286 1.5 acre robotic mower combines RTKⁿ satellite positioning with vision-based awareness and a true four-wheel-drive system to deliver precise, navigation across complex terrain—without added hardware. A four-motor drivetrain with real-time torque control maintains traction and direction on slopes up to 84% (≈40°), while articulated body keeps all four wheels grounded and the cutting plane consistent across uneven ground. Front-wheel steering enables smooth turns without turf damage, while 2.4in vertical obstacle clearance allows the mower to handle raised edges and transitions with confidence. RTKⁿ correction is delivered over the air and supported by a redundant positioning architecture for reliable accuracy, even when satellite signals are degraded. Connectivity via Wi-Fi or integrated 4G ensures continuous operation, with no ongoing costs."
+    },
+    {
+      "sku": "KR284",
+      "name": "EyePilot 4×4 RTKⁿ 1 acre robotic lawn with Zero Trim and integrated 4G and Premium Security",
+      "line": "EyePilot 4×4",
+      "acres": 1,
+      "features": [
+        "Camera vision",
+        "RTKⁿ satellite navigation",
+        "4×4 drive",
+        "ZeroTrim edging",
+        "Built-in 4G",
+        "Premium security"
+      ],
+      "price": 3599.99,
+      "wasPrice": null,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-eyepilot-4x4-rtk%e2%81%bf-1-acre-robotic-lawn-with-zero-trim-and-integrated-4g-and-premium-security-kr284/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/e6c50f2a08669d82f3e151ea7f67f27f761efdce.png/KR281E%20KR283E%20KR285E.png",
+      "description": "Designed for demanding landscapes, the Kress EyePilot 4×4 RTKⁿ KR284 1 acre robotic mower combines RTKⁿ satellite positioning with vision-based awareness and a true four-wheel-drive system to deliver precise,  navigation across complex terrain—without added hardware. A four-motor drivetrain with real-time torque control maintains traction and direction on slopes up to 84% (≈40°), while articulated body keeps all four wheels grounded and the cutting plane consistent across uneven ground. Front-wheel steering enables smooth turns without turf damage, while 2.4in  vertical obstacle clearance allows the mower to handle raised edges and transitions with confidence. RTKⁿ correction is delivered over the air and supported by a redundant positioning architecture for reliable accuracy, even when satellite signals are degraded. Connectivity via Wi-Fi or integrated 4G ensures continuous operation, with no ongoing costs."
+    },
+    {
+      "sku": "KR282",
+      "name": "EyePilot 4×4 RTKⁿ 1/2 acre robotic lawn with Zero Trim and integrated 4G and Premium Security",
+      "line": "EyePilot 4×4",
+      "acres": 0.5,
+      "features": [
+        "Camera vision",
+        "RTKⁿ satellite navigation",
+        "4×4 drive",
+        "ZeroTrim edging",
+        "Built-in 4G",
+        "Premium security"
+      ],
+      "price": 2999.99,
+      "wasPrice": null,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-eyepilot-4x4-rtk%e2%81%bf-1-2-acre-robotic-lawn-with-zero-trim-and-integrated-4g-and-premium-security-kr282/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/e6c50f2a08669d82f3e151ea7f67f27f761efdce.png/KR281E%20KR283E%20KR285E.png",
+      "description": "Designed for demanding landscapes, the Kress EyePilot 4×4 RTKⁿ KR282 1/2 acre robotic mower combines RTKⁿ satellite positioning with vision-based awareness and a true four-wheel-drive system to deliver precise, navigation across complex terrain—without added hardware. A four-motor drivetrain with real-time torque control maintains traction and direction on slopes up to 84% (≈40°), while articulated body keeps all four wheels grounded and the cutting plane consistent across uneven ground. Front-wheel steering enables smooth turns without turf damage, while 2.4in  vertical obstacle clearance allows the mower to handle raised edges and transitions with confidence. RTKⁿ correction is delivered over the air and supported by a redundant positioning architecture for reliable accuracy, even when satellite signals are degraded. Connectivity via Wi-Fi or integrated 4G ensures continuous operation, with no ongoing costs."
+    },
+    {
+      "sku": "KR161",
+      "name": "RTKⁿ ¼-acre robotic lawn mower",
+      "line": "RTKⁿ",
+      "acres": 0.25,
+      "features": [
+        "RTKⁿ satellite navigation"
+      ],
+      "price": 1050.99,
+      "wasPrice": 2099.99,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-rtk%e2%81%bf-%c2%bc-acre-robotic-lawn-mower-kr161/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/08e16babd3fd5686464d9f2a1954246d6254ad4d.png/KR172_list.png",
+      "description": "Redefining precision in lawn care with Kress RTKⁿ technology, the KR161 robotic lawn mower introduces satellite-guided, centimeter-level accuracy without the need for any property-specific stationary antennas."
+    },
+    {
+      "sku": "KR172",
+      "name": "RTKⁿ ½-acre robotic lawn mower",
+      "line": "RTKⁿ",
+      "acres": 0.5,
+      "features": [
+        "RTKⁿ satellite navigation"
+      ],
+      "price": 1249.99,
+      "wasPrice": 2499.99,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-rtk%e2%81%bf-%c2%bd-acre-robotic-lawn-mower-kr172/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/08e16babd3fd5686464d9f2a1954246d6254ad4d.png/KR172_list.png",
+      "description": "Redefining precision in lawn care with Kress RTKⁿ technology, the KR172 robotic lawn mower introduces satellite-guided, centimeter-level accuracy without the need for any property-specific stationary antennas."
+    },
+    {
+      "sku": "KR173",
+      "name": "RTKⁿ ¾-acre robotic lawn mower with OAS (Obstacle Avoidance System)",
+      "line": "RTKⁿ",
+      "acres": 0.75,
+      "features": [
+        "RTKⁿ satellite navigation",
+        "Obstacle avoidance"
+      ],
+      "price": 1499.99,
+      "wasPrice": 2999.99,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-rtk%e2%81%bf-%c2%be-acre-robotic-lawn-mower-with-oas-obstacle-avoidance-system-kr173/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/709ea4910f97137471e3e0d7d5f89427df3e7a4d.png/KR173%20KR174_list.png",
+      "description": "Redefining precision in lawn care with Kress RTKⁿ technology, the KR173 robotic lawn mower introduces satellite-guided, centimeter-level accuracy without the need for any property-specific stationary antennas."
+    },
+    {
+      "sku": "KR174",
+      "name": "RTKⁿ 1¼-acre robotic lawn mower with OAS (Obstacle Avoidance System)",
+      "line": "RTKⁿ",
+      "acres": 1.25,
+      "features": [
+        "RTKⁿ satellite navigation",
+        "Obstacle avoidance"
+      ],
+      "price": 1749.99,
+      "wasPrice": 3499.99,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-rtk%e2%81%bf-1%c2%bc-acre-robotic-lawn-mower-with-oas-obstacle-avoidance-system-kr174/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/709ea4910f97137471e3e0d7d5f89427df3e7a4d.png/KR173%20KR174_list.png",
+      "description": "Redefining precision in lawn care with Kress RTKⁿ technology, the KR174 robotic lawn mower introduces satellite-guided, centimeter-level accuracy without the need for any property-specific stationary antennas. Equipped with dual-layer razor sharp blades and obstacle avoidance system, the KR174 operates efficiently under any conditions."
+    },
+    {
+      "sku": "KR233",
+      "name": "RTKⁿ 3-acre robotic lawn mower with OAS (Obstacle Avoidance System)",
+      "line": "RTKⁿ",
+      "acres": 3,
+      "features": [
+        "RTKⁿ satellite navigation",
+        "Obstacle avoidance"
+      ],
+      "price": 4249.99,
+      "wasPrice": 8499.99,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-rtk%e2%81%bf-3-acre-robotic-lawn-mower-with-oas-obstacle-avoidance-system-kr233/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/e97ea3c85c20c7649a04711bf149f3ebd8a0ed73.png/KR233%20KR236_list.png",
+      "description": "Redefining precision in lawn care with Kress RTKⁿ technology, the KR233 robotic lawn mower introduces satellite-guided, centimeter-level accuracy without the need for any property-specific stationary antennas. Engineered for expansive landscapes, it manicures areas up to 4.5 acres with a stripe-perfect finish. Equipped with dual-layer razor sharp blades and obstacle avoidance system, the KR233 operates efficiently under any conditions. Its MAP™ (Mowing Action Plan) provides seamless management of every turf complexity."
+    },
+    {
+      "sku": "KR236",
+      "name": "RTKⁿ 6-acre robotic lawn mower with OAS (Obstacle Avoidance System)",
+      "line": "RTKⁿ",
+      "acres": 6,
+      "features": [
+        "RTKⁿ satellite navigation",
+        "Obstacle avoidance"
+      ],
+      "price": 6899.99,
+      "wasPrice": 13799.99,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-rtk%e2%81%bf-6-acre-robotic-lawn-mower-with-oas-obstacle-avoidance-system-kr236/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/e97ea3c85c20c7649a04711bf149f3ebd8a0ed73.png/KR233%20KR236_list.png",
+      "description": "Redefining precision in lawn care with Kress RTKⁿ technology, the KR236 robotic lawn mower introduces satellite-guided, centimeter-level accuracy without the need for any property-specific stationary antennas. Engineered for expansive landscapes, it manicures areas up to 9 acres with a stripe-perfect finish. Equipped with dual-layer razor sharp blades and obstacle avoidance system, the KR236 operates efficiently under any conditions. Its MAP™ (Mowing Action Plan) provides seamless management of every turf complexity."
+    },
+    {
+      "sku": "KR237",
+      "name": "RTKⁿ 7-acre robotic lawn mower with OAS (Obstacle Avoidance System)",
+      "line": "RTKⁿ",
+      "acres": 7,
+      "features": [
+        "RTKⁿ satellite navigation",
+        "Obstacle avoidance"
+      ],
+      "price": 14999.99,
+      "wasPrice": null,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-rtk%e2%81%bf-7-acre-robotic-lawn-mower-with-oas-obstacle-avoidance-system-kr237/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/4911d39acdfbaada574b178802036d3c31a22c02.png/KR237E_List.png",
+      "description": "Enhanced cutting performance, driven by a high-powermotor and featuring a gliding disc, ensures exceptionalefficiency and precision in trimming low, dense grass.With a cutting height as low as 10mm, it is specificallyengineered for fairways, delivering consistent, high-qualityresults with increased speed and optimized performance."
+    },
+    {
+      "sku": "KR236S",
+      "name": "RTKⁿ 6-acre robotic lawn mower with OAS (Obstacle Avoidance System), enhanced motor and V-Wheel",
+      "line": "RTKⁿ",
+      "acres": 6,
+      "features": [
+        "RTKⁿ satellite navigation",
+        "Obstacle avoidance",
+        "Enhanced motor & V-Wheel"
+      ],
+      "price": 14299.99,
+      "wasPrice": null,
+      "inStock": true,
+      "url": "https://www.kress.com/en-us/kress-rtk%e2%81%bf-6-acre-robotic-lawn-mower-with-oas-obstacle-avoidance-system-enhanced-motor-and-v-wheel-kr236s/",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/127ce8b846c027acca8a270017e5081fd4d8b242.png/KR236S_list.png",
+      "description": "Redefining precision in lawn care with Kress RTKⁿ technology, the KR236S robotic lawn mower introduces satellite-guided, centimeter-level accuracy without the need for any property-specific stationary antennas, and it also improved the cutting motor and driving motor, equipped with V-Wheel which enhanced ground grip.Engineered for expansive landscapes, it manicures areas up to 9 acres with a stripe-perfect finish. Equipped with dual-layer razor sharp blades and obstacle avoidance system, the KR236S operates efficiently under any conditions. Its MAP™ (Mowing Action Plan) provides seamless management of every turf complexity."
+    }
+  ],
+  "updatedAt": "2026-10-15T16:14:59.287Z"
+}
