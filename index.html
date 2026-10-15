@@ -130,10 +130,12 @@
   var CONTACT_URL = 'https://downtoearthlawncareia.com/contact-us';
   // Service Autopilot "Request Service" form. Submissions become leads in Service Autopilot.
   var REQUEST_URL = 'https://my.serviceautopilot.com/v3/ViewForm?id=ca63e2dc-407b-4fb2-bf47-7b042fbda3b4';
+  // We don't carry the smallest RTKⁿ models: hide RTKⁿ models rated for less than this many acres.
+  var RTK_MIN_ACRES = 0.75;
   var LINES = ['All', 'RTKⁿ', 'EyePilot', 'EyePilot 4×4', 'Commercial & Golf'];
   // Short intro shown under each section heading.
   var INTROS = {
-    'RTKⁿ': 'Satellite-guided mowers with centimeter-level accuracy and no boundary wire, for lawns from ¼ acre to 7 acres.',
+    'RTKⁿ': 'Satellite-guided mowers with centimeter-level accuracy and no boundary wire, for lawns from ¾ acre to 7 acres.',
     'EyePilot': 'RTKⁿ navigation plus camera vision, ZeroTrim edging and built-in 4G.',
     'EyePilot 4×4': 'Everything in EyePilot with four-wheel drive and premium security, built for demanding landscapes.',
     'Commercial & Golf': 'Large-area and golf-course robots. Contact us to plan a commercial installation.'
@@ -225,7 +227,9 @@
   }
 
   function setup(data) {
-    robots = data.robots.filter(function (r) { return r.price; });
+    robots = data.robots.filter(function (r) {
+      return r.price && !(r.line === 'RTKⁿ' && r.acres != null && r.acres < RTK_MIN_ACRES);
+    });
 
     var chips = document.getElementById('lines');
     chips.innerHTML = LINES.filter(function (l) {
