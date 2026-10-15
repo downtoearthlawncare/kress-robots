@@ -141,6 +141,15 @@
 
   document.getElementById('request-link').href = REQUEST_URL;
 
+  // When embedded, tell the website how tall this page is so the embed code can size the frame.
+  function reportHeight() {
+    if (window.parent !== window) {
+      window.parent.postMessage({ type: 'kress-height', height: document.documentElement.scrollHeight }, '*');
+    }
+  }
+  if (window.ResizeObserver) new ResizeObserver(reportHeight).observe(document.body);
+  window.addEventListener('load', reportHeight);
+
   var state = { line: 'All', size: 0, sort: 'price' };
   var robots = [];
 
