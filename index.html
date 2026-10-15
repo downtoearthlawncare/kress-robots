@@ -6,6 +6,7 @@
 <title>Kress Robotic Mowers | Down to Earth Lawn Care</title>
 <meta name="description" content="Every Kress robotic mower with current prices, from your authorized Kress dealer in Sioux Center, Iowa.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Adamina&family=Poppins:wght@400;500;600&display=swap">
+<script>if (/[?&]embed=1/.test(location.search)) document.documentElement.className += ' embedded';</script>
 <style>
   /* Brand colors and fonts, matched to downtoearthlawncareia.com. */
   :root {
@@ -29,6 +30,10 @@
   header p { margin: 0; color: var(--muted); max-width: 760px; }
   header .cta { margin-top: 14px; }
   header .cta .btn { display: inline-block; padding: 10px 18px; }
+  /* Embedded on the GoDaddy page (?embed=1): that page already has its own title and intro. */
+  .embedded .wrap { padding-top: 8px; }
+  .embedded header h1, .embedded header .intro { display: none; }
+  .embedded header .cta { margin-top: 0; }
 
   .controls { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: end;
     margin: 22px 0 10px; padding: 14px 16px; background: var(--soft); border-radius: var(--radius); }
@@ -81,7 +86,7 @@
 <div class="wrap">
   <header>
     <h1>Kress Robotic Mowers</h1>
-    <p>Down to Earth Lawn Care is an authorized Kress dealer serving Sioux Center, Orange City, Le Mars, Rock Valley and Northwest Iowa. Compare every Kress robot below, then contact us for installation and setup.</p>
+    <p class="intro">Down to Earth Lawn Care is an authorized Kress dealer serving Sioux Center, Orange City, Le Mars, Rock Valley and Northwest Iowa. Compare every Kress robot below, then contact us for installation and setup.</p>
     <p class="cta"><a class="btn primary" id="request-link" target="_blank" rel="noopener" href="#">Request service</a></p>
   </header>
 
