@@ -38,6 +38,11 @@
     border-radius: 8px; background: #fff; color: var(--text); }
   .count { color: var(--muted); font-size: .9rem; margin: 6px 2px 14px; }
 
+  .group { margin-bottom: 32px; }
+  .group-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 0;
+    padding-bottom: 6px; border-bottom: 2px solid var(--brand); font-size: 1.35rem; line-height: 1.25; }
+  .group-title span { font-size: .85rem; font-weight: 500; color: var(--muted); }
+  .group-intro { margin: 8px 0 14px; color: var(--muted); }
   .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
   .card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line);
     border-radius: var(--radius); overflow: hidden; }
@@ -47,8 +52,7 @@
   .badge { position: absolute; z-index: 1; top: 10px; left: 10px; background: var(--accent); color: #fff;
     font-size: .78rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; }
   .body { display: flex; flex-direction: column; gap: 8px; padding: 14px 16px 16px; flex: 1; }
-  .line { font-size: .78rem; font-weight: 700; color: var(--brand); text-transform: uppercase; letter-spacing: .05em; }
-  .card h2 { margin: 0; font-size: 1.05rem; line-height: 1.3; }
+  .card h3 { margin: 0; font-size: 1.05rem; line-height: 1.3; }
   .sku { color: var(--muted); font-weight: 400; font-size: .9rem; }
   .size { font-weight: 600; }
   .feats { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
@@ -107,7 +111,7 @@
   </div>
 
   <div class="count" id="count" aria-live="polite"></div>
-  <div class="grid" id="grid"></div>
+  <div id="grid"></div>
 
   <footer id="footer"></footer>
 </div>
@@ -116,6 +120,13 @@
   // Where "Ask us about this model" sends people. Opens on the main site, not inside the embed.
   var CONTACT_URL = 'https://downtoearthlawncareia.com/contact-us';
   var LINES = ['All', 'RTKⁿ', 'EyePilot', 'EyePilot 4×4', 'Commercial & Golf'];
+  // Short intro shown under each section heading.
+  var INTROS = {
+    'RTKⁿ': 'Satellite-guided mowers with centimeter-level accuracy and no boundary wire, for lawns from ¼ acre to 7 acres.',
+    'EyePilot': 'RTKⁿ navigation plus camera vision, ZeroTrim edging and built-in 4G.',
+    'EyePilot 4×4': 'Everything in EyePilot with four-wheel drive and premium security, built for demanding landscapes.',
+    'Commercial & Golf': 'Large-area and golf-course robots. Contact us to plan a commercial installation.'
+  };
 
   var state = { line: 'All', size: 0, sort: 'price' };
   var robots = [];
@@ -155,29 +166,39 @@
       grid.innerHTML = '<div class="empty">No models match. Try a different product line or lawn size.</div>';
       return;
     }
-    grid.innerHTML = list.map(function (r) {
-      var sale = r.wasPrice && r.wasPrice > r.price;
-      var subject = encodeURIComponent('Kress ' + r.sku);
-      return '<article class="card">' +
-        '<div class="img">' + (sale ? '<span class="badge">On sale</span>' : '') +
-          (r.image ? '<img loading="lazy" src="' + esc(r.image) + '" alt="Kress ' + esc(r.sku) + ' robotic mower">' : '') +
-        '</div>' +
-        '<div class="body">' +
-          '<div class="line">' + esc(r.line) + '</div>' +
-          '<h2>' + esc(r.name) + ' <span class="sku">' + esc(r.sku) + '</span></h2>' +
-          '<div class="size">' + acres(r.acres) + '</div>' +
-          (r.features.length ? '<ul class="feats">' + r.features.map(function (f) { return '<li>' + esc(f) + '</li>'; }).join('') + '</ul>' : '') +
-          '<div class="price">' +
-            '<span class="now">' + money(r.price) + '</span>' +
-            (sale ? '<span class="was">' + money(r.wasPrice) + '</span><span class="save">Save ' + money(r.wasPrice - r.price) + '</span>' : '') +
-          '</div>' +
-          '<div class="actions">' +
-            '<a class="btn primary" target="_top" href="' + CONTACT_URL + '?model=' + subject + '">Ask us about this model</a>' +
-            '<a class="btn secondary" target="_blank" rel="noopener" href="' + esc(r.url) + '">Details on kress.com</a>' +
-          '</div>' +
-        '</div>' +
-      '</article>';
+    // One section per product line, in the order of LINES.
+    grid.innerHTML = LINES.slice(1).map(function (line) {
+      var items = list.filter(function (r) { return r.line === line; });
+      if (!items.length) return '';
+      return '<section class="group">' +
+        '<h2 class="group-title">' + esc(line) + ' <span>' + items.length + (items.length === 1 ? ' model' : ' models') + '</span></h2>' +
+        (INTROS[line] ? '<p class="group-intro">' + esc(INTROS[line]) + '</p>' : '') +
+        '<div class="grid">' + items.map(card).join('') + '</div>' +
+      '</section>';
     }).join('');
+  }
+
+  function card(r) {
+    var sale = r.wasPrice && r.wasPrice > r.price;
+    var subject = encodeURIComponent('Kress ' + r.sku);
+    return '<article class="card">' +
+      '<div class="img">' + (sale ? '<span class="badge">On sale</span>' : '') +
+        (r.image ? '<img loading="lazy" src="' + esc(r.image) + '" alt="Kress ' + esc(r.sku) + ' robotic mower">' : '') +
+      '</div>' +
+      '<div class="body">' +
+        '<h3>' + esc(r.name) + ' <span class="sku">' + esc(r.sku) + '</span></h3>' +
+        '<div class="size">' + acres(r.acres) + '</div>' +
+        (r.features.length ? '<ul class="feats">' + r.features.map(function (f) { return '<li>' + esc(f) + '</li>'; }).join('') + '</ul>' : '') +
+        '<div class="price">' +
+          '<span class="now">' + money(r.price) + '</span>' +
+          (sale ? '<span class="was">' + money(r.wasPrice) + '</span><span class="save">Save ' + money(r.wasPrice - r.price) + '</span>' : '') +
+        '</div>' +
+        '<div class="actions">' +
+          '<a class="btn primary" target="_top" href="' + CONTACT_URL + '?model=' + subject + '">Ask us about this model</a>' +
+          '<a class="btn secondary" target="_blank" rel="noopener" href="' + esc(r.url) + '">Details on kress.com</a>' +
+        '</div>' +
+      '</div>' +
+    '</article>';
   }
 
   function setup(data) {
