@@ -1,6 +1,6 @@
 {
   "source": "https://www.kress.com/en-us/robotic-lawn-mowers/",
-  "checkedAt": "2026-11-04T11:45:18.854Z",
+  "checkedAt": "2026-11-05T11:45:02.653Z",
   "count": 16,
   "robots": [
     {
@@ -80,7 +80,7 @@
       "wasPrice": null,
       "inStock": true,
       "url": "https://www.kress.com/en-us/kress-eyepilot-rtk%e2%81%bf-2-5-acre-robotic-lawn-mower-with-zerotrim-with-integrated-4g-kr276/",
-      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/b1d00b443abc8eff759db985f1ecd98ca856889b.png/KR271E%20KR273E%20KR274E%20%282%29.png",
+      "image": "https://www.kress.com/wp-content/plugins/woocommerce-onpage/storage/cache/290944ecfc5844affd28829ab54ab37dc5109a69.png/KR276%20KR274%20KR272_list.png",
       "description": "Delivering course-grade lawn care, the Kress EyePilot RTKⁿ KR276 1.5 acre robotic mower uses RTKⁿ satellite positioning combined with vision-based awareness to deliver, accurate navigation across differnt lawns — without added hardware. RTKⁿ correction is delivered over the air and reinforced by a redundant positioning architecture, allowing the mower to maintain accuracy even when satellite signals are compromised. The ZeroTrim cutting system delivers clean, precise edge cutting, reducing the need for manual trimming. Mowing patterns can be set for defined stripes or a more natural finish. EyePilot remains reliably connected via Wi-Fi or integrated 4G. With no ongoing costs, the system stays connected, updated, and trackable."
     },
     {
@@ -271,5 +271,5 @@
       "description": "Redefining precision in lawn care with Kress RTKⁿ technology, the KR236S robotic lawn mower introduces satellite-guided, centimeter-level accuracy without the need for any property-specific stationary antennas, and it also improved the cutting motor and driving motor, equipped with V-Wheel which enhanced ground grip.Engineered for expansive landscapes, it manicures areas up to 9 acres with a stripe-perfect finish. Equipped with dual-layer razor sharp blades and obstacle avoidance system, the KR236S operates efficiently under any conditions. Its MAP™ (Mowing Action Plan) provides seamless management of every turf complexity."
     }
   ],
-  "updatedAt": "2026-10-15T16:14:59.287Z"
+  "updatedAt": "2026-11-05T11:45:02.653Z"
 }
