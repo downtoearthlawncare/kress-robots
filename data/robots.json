@@ -1,6 +1,6 @@
 {
   "source": "https://www.kress.com/en-us/robotic-lawn-mowers/",
-  "checkedAt": "2026-11-08T11:25:24.438Z",
+  "checkedAt": "2026-11-09T11:44:09.813Z",
   "count": 15,
   "robots": [
     {
@@ -67,9 +67,9 @@
     },
     {
       "sku": "KR286",
-      "name": "EyePilot 4×4 RTKⁿ 2.5 acre robotic lawn mower with Zero Trim and integrated 4G and Premium Security",
+      "name": "EyePilot 4×4 RTKⁿ 1.5 acre robotic lawn mower with Zero Trim and integrated 4G and Premium Security",
       "line": "EyePilot 4×4",
-      "acres": 2.5,
+      "acres": 1.5,
       "features": [
         "Camera vision",
         "RTKⁿ satellite navigation",
@@ -253,5 +253,5 @@
       "description": "Redefining precision in lawn care with Kress RTKⁿ technology, the KR236S robotic lawn mower introduces satellite-guided, centimeter-level accuracy without the need for any property-specific stationary antennas, and it also improved the cutting motor and driving motor, equipped with V-Wheel which enhanced ground grip.Engineered for expansive landscapes, it manicures areas up to 9 acres with a stripe-perfect finish. Equipped with dual-layer razor sharp blades and obstacle avoidance system, the KR236S operates efficiently under any conditions. Its MAP™ (Mowing Action Plan) provides seamless management of every turf complexity."
     }
   ],
-  "updatedAt": "2026-11-07T11:24:06.830Z"
+  "updatedAt": "2026-11-09T11:44:09.813Z"
 }
